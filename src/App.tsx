@@ -6,7 +6,7 @@ const App = () => {
     <div className={"h-screen mx-20 bg-white flex flex-col"}>
       <header className={"py-8 border-b flex items-center justify-between"}>
         <h1 className={"text-10"}>HeStudy</h1>
-        <div className={"text-4"}>
+        <div className={"text-3.5 font-bold"}>
           <Link to={"/"}>Home</Link>
         </div>
         <div>

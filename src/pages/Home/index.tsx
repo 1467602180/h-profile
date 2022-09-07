@@ -1,13 +1,39 @@
+import { formatDistance } from "date-fns";
+
 const Home = () => {
   return (
-    <div className={"flex h-full"}>
+    <div className={"flex"}>
       <div className={"w-150 h-full flex flex-col"}>
         <div
-          className={
-            "flex-1 flex flex-col place-content-end pb-10 pl-10 font-600"
-          }
+          className={"flex-1 flex flex-col place-content-end pb-10 font-600"}
         >
-          <div>
+          <div className={"text-20 w-135"}>
+            <div
+              className={
+                "float-right ml-2 mt-11 text-3.5 bg-blue-600 text-white p-3 px-4 rounded-5"
+              }
+            >
+              Application Developer
+            </div>
+            Hi! I Am HeStudy
+          </div>
+          <div className={"mt-10"}>
+            Over{" "}
+            <span className={"text-orange-600"}>
+              {formatDistance(new Date(2020, 9, 1), new Date())}
+            </span>
+            <br /> as a development engineer developing user interfaces
+          </div>
+          <div className={"flex place-items-center space-x-10 mt-10"}>
+            <button className={"bg-orange-600 py-4 px-10 text-white text-3.5"}>
+              Hire Me
+            </button>
+            <button className={"text-3.5 flex space-x-2"}>
+              <div>Projects</div>
+              <div className="i-akar-icons:arrow-up-right text-5" />
+            </button>
+          </div>
+          <div className={"mt-10"}>
             <div className={"text-7"}>+84</div>
             <div className={"text-4"}>
               Clients on work <br />
@@ -27,7 +53,7 @@ const Home = () => {
         </div>
         <div
           className={
-            "py-20 bg-black space-x-15 flex place-content-center place-items-center text-white"
+            "py-20 bg-black space-x-15 ml--10 pl-10 flex place-items-center text-white"
           }
         >
           <div className={"text-4.5 font-500"}>
@@ -57,7 +83,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className={"flex-1"}>demo</div>
+      <div className={"flex-1 bg-#ded1c1"}></div>
     </div>
   );
 };
